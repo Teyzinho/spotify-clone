@@ -5,7 +5,7 @@ import {
   useUser as useSupaUser,
 } from "@supabase/auth-helpers-react";
 
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 type UserContextType = {
   accessToken: string | null;
@@ -96,3 +96,12 @@ export const MyUserContextProviders = (props: Props) => {
 
   return <UserContext.Provider value={value} {...props} />; // Retorna o UserContext.Provider com o valor definido como value e repassa as propriedades adicionais
 };
+
+export const useUser = () =>{
+    const context = useContext(UserContext);
+    
+    if (context === undefined){
+        throw new Error("useUser must be used within a MyUserContextProvider");
+    }
+    return context;
+}
