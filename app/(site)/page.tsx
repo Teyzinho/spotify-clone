@@ -4,7 +4,7 @@ import ListItem from "@/components/ListItem";
 import PageContent from "./components/PageContent";
 
 //This page will not be cached and the data will always be up to date
-export const revalidete = 0;
+export const revalidate = 0;
 
 export default async function Home() {
 
