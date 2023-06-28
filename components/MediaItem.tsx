@@ -11,13 +11,13 @@ interface MediaItemProps{
 
 const MediaItem:React.FC<MediaItemProps> = ({
     data,
-    onCLick
+    onClick
 }) => {
     const imageUrl = useLoadImage(data);
 
     const handleClick = () => {
-        if(onclick){
-            return onCLick(data.id)
+        if(onClick){
+            return onClick(data.id)
         }
 
         // todo Default turn on player
