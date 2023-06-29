@@ -8,6 +8,8 @@ import Box from "./Box";
 import SidebarItem from "./SidebarItem";
 import Libary from "./Library";
 import { Song } from "@/types";
+import usePlayer from "@/hooks/usePlayer";
+import { twMerge } from "tailwind-merge";
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -16,6 +18,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ children,songs }) => {
   const pathname = usePathname();
+  const player = usePlayer();
 
   // Definição da lista de rotas usando o hook useMemo
   const routes = useMemo(
@@ -38,7 +41,12 @@ const Sidebar: React.FC<SidebarProps> = ({ children,songs }) => {
   //No código acima, o useMemo é utilizado para memoizar a lista de rotas. O retorno da função passada para o useMemo é a lista de objetos de rota.
 
   return (
-    <div className="flex h-full">
+    <div className={twMerge(`
+      flex
+      h-full
+    `,
+      player.activeId && "h-[calc(100%-80px)]"
+    )}>
       <div
         className="
                 hidden
