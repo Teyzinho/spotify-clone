@@ -1,7 +1,7 @@
 import { Price } from "@/types";
 
 //Fetch our Url dependendo em que site estiver
-export const getUrl = () => {
+export const getURL = () => {
     let url =
     process?.env?.NEXT_PUBLIC_SITE_URL ?? 
     process?.env?.NEXT_PUBLIC_VERCEL_URL ?? //Autimaticamente setado pelo Vercel
