@@ -17,6 +17,7 @@ const Libary: React.FC<LibraryProps> = ({ songs }) => {
   const authModal = useAuthModal();
   const uploadModal = useUploadModal();
   const { user } = useUser();
+  console.log("user",user)
 
   const onPlay = useOnPlay(songs)
 
