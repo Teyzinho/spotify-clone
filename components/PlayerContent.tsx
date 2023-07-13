@@ -221,7 +221,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
                     "
           />
         </div>
-        <div className="w-full flex gap-1 items-center justify-center">
+        <div className="w-9/12 bottom-0 left-1/2 translate-x-[-50%] absolute flex gap-1 items-center justify-center md:relative md:w-full md:translate-x-0 md:left-0">
           <p className="text-gray-400 text-sm">
             {currTime.min}:{currTime.sec}
           </p>
