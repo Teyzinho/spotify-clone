@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spotify-Clone
+## Descrição
 
-## Getting Started
+O objetivo deste projeto é demonstrar habilidades de desenvolvimento web, bem como o uso de algumas tecnologias modernas para construir um site similar ao Spotify.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Upload de Musicas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dar Like nas músicas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Loguin e Registro
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Metodos de pagamento para o modo premium com Strapi
 
-## Learn More
+Ouvir, pular, selecionar músicas
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
+<img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="25px"> React: Biblioteca front-end JavaScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img  src="https://github.com/Teyzinho/SimioSocial/assets/103509649/53c41250-f395-4dc6-9e76-da5b6bddb3bb" width="25px">
+Next.js: Um framework React para desenvolvimento de aplicações web do lado do cliente e do servidor.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img  src="https://yt3.googleusercontent.com/NqiGfwN1LVktrPKrSDjWCdWL1B2O8KzPKSmXowT91w8-Z6PUgZgj0qpXIj5AxYPevf3_rB-I=s900-c-k-c0x00ffffff-no-rj" width="25px"> Supabase: Um serviço de banco de dados e autenticação que facilita o desenvolvimento de aplicativos com backend.
 
-## Deploy on Vercel
+<img  src="https://viget.imgix.net/tailwind-on-gray.png?auto=format%2Ccompress&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&ixlib=php-3.3.1&q=90&w=1200&s=3b364fd07ccd56661ac684a4aca524f8" width="25px"> TailWind: Uma biblioteca para estilização.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div>
+  <img src="https://github.com/Teyzinho/Ecommerce/assets/103509649/70879020-78f0-4f8d-a20b-9b59ceaadd81" width="25px"> Stripe, Para metodos de pagamento
+ </div>
